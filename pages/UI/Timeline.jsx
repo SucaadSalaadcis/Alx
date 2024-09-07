@@ -302,22 +302,22 @@ export default function Timeline() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../UI/general.html" class="nav-link">
+                                            <Link to={'/ui/general'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>General</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/icons.html" class="nav-link">
+                                            <Link to={'/ui/icon'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Icons</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/buttons.html" class="nav-link">
+                                            <Link to={'/ui/buttons'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Buttons</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <a href="../UI/sliders.html" class="nav-link">
@@ -326,28 +326,28 @@ export default function Timeline() {
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/modals.html" class="nav-link">
+                                            <Link to={'/ui/modals'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Modals & Alerts</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/navbar.html" class="nav-link">
+                                            <Link to={'/ui/navbar'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Navbar & Tabs</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/timeline.html" class="nav-link active">
+                                            <Link to={'/ui/timeline'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Timeline</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/ribbons.html" class="nav-link">
+                                            <Link to={'/ui/ribbons'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Ribbons</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -361,10 +361,10 @@ export default function Timeline() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../forms/general.html" class="nav-link">
+                                        <Link to={'/forms/general'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>General Elements</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <a href="../forms/advanced.html" class="nav-link">
@@ -379,10 +379,10 @@ export default function Timeline() {
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/validation.html" class="nav-link">
+                                        <Link to={'/forms/validations'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Validation</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -395,51 +395,51 @@ export default function Timeline() {
                                         </p>
                                     </a>
                                     <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="../tables/simple.html" class="nav-link">
+                                    <li class="nav-item">
+                                            <Link to={'/table/simple'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Simple Tables</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../tables/data.html" class="nav-link">
+                                            <Link to={'/table/data'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>DataTables</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../tables/jsgrid.html" class="nav-link">
+                                            <Link to={'/table/jsgrid'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>jsGrid</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-header">EXAMPLES</li>
                                 <li class="nav-item">
-                                    <a href="../calendar.html" class="nav-link">
-                                        <i class="nav-icon far fa-calendar-alt"></i>
+                                    <Link to={'/ui/calender'} class="nav-link">
+                                        <i class="nav-icon fas fa-calendar-alt"></i>
                                         <p>
                                             Calendar
                                             <span class="badge badge-info right">2</span>
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../gallery.html" class="nav-link">
+                                    <Link to={'/ui/galery'} class="nav-link">
                                         <i class="nav-icon far fa-image"></i>
                                         <p>
                                             Gallery
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../kanban.html" class="nav-link">
+                                    <Link to={'/ui/kanban'} class="nav-link">
                                         <i class="nav-icon fas fa-columns"></i>
                                         <p>
                                             Kanban Board
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
@@ -450,23 +450,23 @@ export default function Timeline() {
                                         </p>
                                     </a>
                                     <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="../mailbox/mailbox.html" class="nav-link">
+                                    <li class="nav-item">
+                                            <Link to={'/mailbox/mailbox'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Inbox</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../mailbox/compose.html" class="nav-link">
+                                            <Link to={'/mailbox/compose'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Compose</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../mailbox/read-mail.html" class="nav-link">
+                                            <Link to={'/mailbox/read_mail'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Read</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -621,46 +621,46 @@ export default function Timeline() {
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/lockscreen.html" class="nav-link">
+                                            <Link to={'/example/lockscreen'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Lockscreen</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/legacy-user-menu.html" class="nav-link">
+                                            <Link to={'/example/legacy_user_menu'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Legacy User Menu</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/language-menu.html" class="nav-link">
+                                            <Link to={'/example/language_menu'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Language Menu</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/404.html" class="nav-link">
+                                            <Link to={'/example/404'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Error 404</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/500.html" class="nav-link">
+                                            <Link to={'/example/500'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Error 500</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/pace.html" class="nav-link">
+                                            <Link to={'/example/pace'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Pace</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/blank.html" class="nav-link">
+                                            <Link to={'/example/blank'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Blank Page</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <a href="../../starter.html" class="nav-link">
@@ -680,16 +680,16 @@ export default function Timeline() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../search/simple.html" class="nav-link">
+                                            <Link to={'/search/simple_search'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Simple Search</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../search/enhanced.html" class="nav-link">
+                                            <Link to={'/search/enhanced'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Enhanced</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>

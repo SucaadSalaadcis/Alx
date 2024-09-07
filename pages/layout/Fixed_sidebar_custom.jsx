@@ -290,16 +290,16 @@ export default function Fixed_sidebar_custom() {
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../charts/inline.html" class="nav-link">
+                                            <Link to={'/charts/inline'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Inline</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../charts/uplot.html" class="nav-link">
+                                            <Link to={'/charts/uplot'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>uPlot</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -313,22 +313,22 @@ export default function Fixed_sidebar_custom() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../UI/general.html" class="nav-link">
+                                            <Link to={'/ui/general'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>General</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/icons.html" class="nav-link">
+                                            <Link to={'/ui/icon'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Icons</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/buttons.html" class="nav-link">
+                                            <Link to={'/ui/buttons'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Buttons</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <a href="../UI/sliders.html" class="nav-link">
@@ -337,28 +337,28 @@ export default function Fixed_sidebar_custom() {
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/modals.html" class="nav-link">
+                                            <Link to={'/ui/modals'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Modals & Alerts</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/navbar.html" class="nav-link">
+                                            <Link to={'/ui/navbar'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Navbar & Tabs</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/timeline.html" class="nav-link">
+                                            <Link to={'/ui/timeline'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Timeline</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/ribbons.html" class="nav-link">
+                                            <Link to={'/ui/ribbons'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Ribbons</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -372,10 +372,10 @@ export default function Fixed_sidebar_custom() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../forms/general.html" class="nav-link">
+                                            <Link to={'/forms/general'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>General Elements</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <a href="../forms/advanced.html" class="nav-link">
@@ -390,10 +390,10 @@ export default function Fixed_sidebar_custom() {
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/validation.html" class="nav-link">
+                                            <Link to={'/forms/validations'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Validation</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -407,50 +407,50 @@ export default function Fixed_sidebar_custom() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../tables/simple.html" class="nav-link">
+                                            <Link to={'/table/simple'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Simple Tables</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../tables/data.html" class="nav-link">
+                                            <Link to={'/table/data'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>DataTables</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../tables/jsgrid.html" class="nav-link">
+                                            <Link to={'/table/jsgrid'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>jsGrid</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-header">EXAMPLES</li>
                                 <li class="nav-item">
-                                    <a href="../calendar.html" class="nav-link">
-                                        <i class="nav-icon far fa-calendar-alt"></i>
+                                    <Link to={'/ui/calender'} class="nav-link">
+                                        <i class="nav-icon fas fa-calendar-alt"></i>
                                         <p>
                                             Calendar
                                             <span class="badge badge-info right">2</span>
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../gallery.html" class="nav-link">
+                                    <Link to={'/ui/galery'} class="nav-link">
                                         <i class="nav-icon far fa-image"></i>
                                         <p>
                                             Gallery
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../kanban.html" class="nav-link">
+                                    <Link to={'/ui/kanban'} class="nav-link">
                                         <i class="nav-icon fas fa-columns"></i>
                                         <p>
                                             Kanban Board
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
@@ -461,23 +461,23 @@ export default function Fixed_sidebar_custom() {
                                         </p>
                                     </a>
                                     <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="../mailbox/mailbox.html" class="nav-link">
+                                    <li class="nav-item">
+                                            <Link to={'/mailbox/mailbox'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Inbox</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../mailbox/compose.html" class="nav-link">
+                                            <Link to={'/mailbox/compose'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Compose</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../mailbox/read-mail.html" class="nav-link">
+                                            <Link to={'/mailbox/read_mail'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Read</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -491,64 +491,64 @@ export default function Fixed_sidebar_custom() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../examples/invoice.html" class="nav-link">
+                                            <Link to={'/example/invoice'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Invoice</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/profile.html" class="nav-link">
+                                            <Link to={'/example/profile'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Profile</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/e-commerce.html" class="nav-link">
+                                            <Link to={'/example/ecommerce'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>E-commerce</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/projects.html" class="nav-link">
+                                            <Link to={'/example/projects'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Projects</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/project-add.html" class="nav-link">
+                                            <Link to={'/example/project_add'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Project Add</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/project-edit.html" class="nav-link">
+                                            <Link to={'/example/project_edit'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Project Edit</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/project-detail.html" class="nav-link">
+                                            <Link to={'/example/project_detail'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Project Detail</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/contacts.html" class="nav-link">
+                                            <Link to={'/example/contacts'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Contacts</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/faq.html" class="nav-link">
+                                            <Link to={'/example/faq'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>FAQ</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/contact-us.html" class="nav-link">
+                                            <Link to={'/example/contact_us'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Contact us</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -571,28 +571,28 @@ export default function Fixed_sidebar_custom() {
                                             </a>
                                             <ul class="nav nav-treeview">
                                                 <li class="nav-item">
-                                                    <a href="../examples/login.html" class="nav-link">
+                                                    <Link to={'/example/login'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Login v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/register.html" class="nav-link">
+                                                    <Link to={'/example/register'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Register v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/forgot-password.html" class="nav-link">
+                                                    <Link to={'/example/forgot_password'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Forgot Password v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/recover-password.html" class="nav-link">
+                                                    <Link to={'/example/recover_password'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Recover Password v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
@@ -606,72 +606,72 @@ export default function Fixed_sidebar_custom() {
                                             </a>
                                             <ul class="nav nav-treeview">
                                                 <li class="nav-item">
-                                                    <a href="../examples/login-v2.html" class="nav-link">
+                                                    <Link to={'/example/login_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Login v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/register-v2.html" class="nav-link">
+                                                    <Link to={'/example/register_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Register v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/forgot-password-v2.html" class="nav-link">
+                                                    <Link to={'/example/forgot_password_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Forgot Password v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/recover-password-v2.html" class="nav-link">
+                                                    <Link to={'/example/recover_password_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Recover Password v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/lockscreen.html" class="nav-link">
+                                            <Link to={'/example/lockscreen'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Lockscreen</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/legacy-user-menu.html" class="nav-link">
+                                            <Link to={'/example/legacy_user_menu'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Legacy User Menu</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/language-menu.html" class="nav-link">
+                                            <Link to={'/example/language_menu'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Language Menu</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/404.html" class="nav-link">
+                                            <Link to={'/example/404'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Error 404</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/500.html" class="nav-link">
+                                            <Link to={'/example/500'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Error 500</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/pace.html" class="nav-link">
+                                            <Link to={'/example/pace'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Pace</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/blank.html" class="nav-link">
+                                            <Link to={'/example/blank'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Blank Page</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <a href="../../starter.html" class="nav-link">
@@ -691,16 +691,16 @@ export default function Fixed_sidebar_custom() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../search/simple.html" class="nav-link">
+                                            <Link to={'/search/simple_search'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Simple Search</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../search/enhanced.html" class="nav-link">
+                                            <Link to={'/search/enhanced'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Enhanced</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
