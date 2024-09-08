@@ -20,7 +20,7 @@ import Uplot from '../pages/charts/uplot'
 import Buttons from '../pages/UI/Buttons'
 import General from '../pages/UI/General'
 import Icon from '../pages/UI/Icon'
-// import Sliders from '../pages/UI/Sliders'
+import Sliders from '../pages/UI/Sliders'
 import Modals from '../pages/UI/Modals'
 import Navbar from '../pages/UI/Navbar'
 import Timeline from '../pages/UI/Timeline'
@@ -110,7 +110,7 @@ export default function App() {
         <Route path='/ui/general' element={<General />} />
         <Route path='/ui/buttons' element={<Buttons />} />
         <Route path='/ui/icon' element={<Icon />} />
-        {/* <Route path='/ui/sliders' element={<Sliders />} /> */}
+        <Route path='/ui/sliders' element={<Sliders />} />
         <Route path='/ui/modals' element={<Modals />} />
         <Route path='/ui/navbar' element={<Navbar />} />
         <Route path='/ui/timeline' element={<Timeline />} />

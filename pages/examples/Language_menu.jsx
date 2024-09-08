@@ -341,10 +341,10 @@ export default function Language_menu() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/sliders.html" class="nav-link">
+                                            <Link to={'/ui/sliders'}  class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Sliders</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <Link to={'/ui/modals'} class="nav-link">
