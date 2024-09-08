@@ -77,6 +77,8 @@ import Enhanced from '../pages/search/Enhanced'
 import Enhanced_results from '../pages/search/Enhanced_results'
 import Simple_Search from '../pages/search/Simple'
 import Simple_results from '../pages/search/Simple_results'
+// iframe
+import Iframe from '../iframe'
 
 export default function App() {
   return (
@@ -170,7 +172,8 @@ export default function App() {
         <Route path='/example/register_v2' element={<Register_v2 />} />
         <Route path='/example/register' element={<Register />} />
 
-
+       {/* iframe */}
+        <Route path='/iframe' element={<Iframe />} />
       </Routes>
 
     </>

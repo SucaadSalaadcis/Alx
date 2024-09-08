@@ -1,56 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
-export default function Validation() {
-
-    $(function () {
-        $.validator.setDefaults({
-            submitHandler: function () {
-                alert("Form successful submitted!");
-            }
-        });
-        $('#quickForm').validate({
-            rules: {
-                email: {
-                    required: true,
-                    email: true,
-                },
-                password: {
-                    required: true,
-                    minlength: 5
-                },
-                terms: {
-                    required: true
-                },
-            },
-            messages: {
-                email: {
-                    required: "Please enter a email address",
-                    email: "Please enter a valid email address"
-                },
-                password: {
-                    required: "Please provide a password",
-                    minlength: "Your password must be at least 5 characters long"
-                },
-                terms: "Please accept our terms"
-            },
-            errorElement: 'span',
-            errorPlacement: function (error, element) {
-                error.addClass('invalid-feedback');
-                element.closest('.form-group').append(error);
-            },
-            highlight: function (element, errorClass, validClass) {
-                $(element).addClass('is-invalid');
-            },
-            unhighlight: function (element, errorClass, validClass) {
-                $(element).removeClass('is-invalid');
-            }
-        });
-    });
+export default function Iframe() {
 
     return (
-        <body class="hold-transition sidebar-mini">
+        <body class="hold-transition sidebar-mini layout-fixed" data-panel-auto-height-mode="height">
             <div class="wrapper">
+
                 {/* <!-- Navbar --> */}
                 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
                     {/* <!-- Left navbar links --> */}
@@ -100,7 +56,7 @@ export default function Validation() {
                                 <a href="#" class="dropdown-item">
                                     {/* <!-- Message Start --> */}
                                     <div class="media">
-                                        <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
+                                        <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
                                         <div class="media-body">
                                             <h3 class="dropdown-item-title">
                                                 Brad Diesel
@@ -116,7 +72,7 @@ export default function Validation() {
                                 <a href="#" class="dropdown-item">
                                     {/* <!-- Message Start --> */}
                                     <div class="media">
-                                        <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                                        <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
                                         <div class="media-body">
                                             <h3 class="dropdown-item-title">
                                                 John Pierce
@@ -132,7 +88,7 @@ export default function Validation() {
                                 <a href="#" class="dropdown-item">
                                     {/* <!-- Message Start --> */}
                                     <div class="media">
-                                        <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                                        <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
                                         <div class="media-body">
                                             <h3 class="dropdown-item-title">
                                                 Nora Silvester
@@ -192,17 +148,17 @@ export default function Validation() {
                 {/* <!-- Main Sidebar Container --> */}
                 <aside class="main-sidebar sidebar-dark-primary elevation-4">
                     {/* <!-- Brand Logo --> */}
-                    <Link to={'/'} class="brand-link">
-                        <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style={{ opacity: ".8" }} />
+                    <a href="index3.html" class="brand-link">
+                        <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style={{ opacity: ".8" }} />
                         <span class="brand-text font-weight-light">AdminLTE 3</span>
-                    </Link>
+                    </a>
 
                     {/* <!-- Sidebar --> */}
                     <div class="sidebar">
-                        {/* <!-- Sidebar user (optional) --> */}
+                        {/* <!-- Sidebar user panel (optional) --> */}
                         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                             <div class="image">
-                                <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+                                <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
                             </div>
                             <div class="info">
                                 <a href="#" class="d-block">Alexander Pierce</a>
@@ -225,7 +181,7 @@ export default function Validation() {
                         <nav class="mt-2">
                             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                                 {/* <!-- Add icons to the links using the .nav-icon class
-                   with font-awesome or any other icon font library --> */}
+               with font-awesome or any other icon font library --> */}
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -235,7 +191,6 @@ export default function Validation() {
                                         </p>
                                     </a>
                                     <ul class="nav nav-treeview">
-                                        {/* <!--  --> */}
                                         <li class="nav-item">
                                             <Link to={'/'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
@@ -255,66 +210,6 @@ export default function Validation() {
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        <i class="nav-icon fas fa-copy"></i>
-                                        <p>
-                                            Layout Options
-                                            <i class="fas fa-angle-left right"></i>
-                                            <span class="badge badge-info right">6</span>
-                                        </p>
-                                    </a>
-                                    <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <Link to={'/layout/top_nav'} class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Top Navigation</p>
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link to={'/layout/top_nav_sidebar'} class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Top Navigation + Sidebar</p>
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link to={'/layout/boxed'} class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Boxed</p>
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link to={'/layout/fixed_sidebar'} class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Fixed Sidebar</p>
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link to={'/layout/fixed_sidebar_custom'} class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Fixed Sidebar <small>+ Custom Area</small></p>
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link to={'/layout/fixed_top_nav'} class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Fixed Navbar</p>
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link to={'/layout/fixed_footer'} class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Fixed Footer</p>
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link to={'/layout/collapsed_sidebar'} class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Collapsed Sidebar</p>
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
                                         <i class="nav-icon fas fa-chart-pie"></i>
                                         <p>
                                             Charts
@@ -329,7 +224,7 @@ export default function Validation() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../charts/flot.html" class="nav-link">
+                                            <a href="pages/charts/flot.html" class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Flot</p>
                                             </a>
@@ -338,12 +233,6 @@ export default function Validation() {
                                             <Link to={'/charts/inline'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Inline</p>
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link to={'/charts/uplot'} class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>uPlot</p>
                                             </Link>
                                         </li>
                                     </ul>
@@ -364,10 +253,10 @@ export default function Validation() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/icons.html" class="nav-link">
+                                            <Link to={'/ui/icon'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Icons</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <Link to={'/ui/buttons'} class="nav-link">
@@ -376,7 +265,7 @@ export default function Validation() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/sliders.html" class="nav-link">
+                                            <a href="pages/UI/sliders.html" class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Sliders</p>
                                             </a>
@@ -407,8 +296,8 @@ export default function Validation() {
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item menu-open">
-                                    <a href="#" class="nav-link active">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
                                         <i class="nav-icon fas fa-edit"></i>
                                         <p>
                                             Forms
@@ -423,13 +312,13 @@ export default function Validation() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/advanced.html" class="nav-link">
+                                            <a href="pages/forms/advanced.html" class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Advanced Elements</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/editors.html" class="nav-link">
+                                            <a href="pages/forms/editors.html" class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Editors</p>
                                             </a>
@@ -474,7 +363,7 @@ export default function Validation() {
                                 <li class="nav-header">EXAMPLES</li>
                                 <li class="nav-item">
                                     <Link to={'/ui/calender'} class="nav-link">
-                                        <i class="nav-icon fas fa-calendar-alt"></i>
+                                        <i class="nav-icon far fa-calendar-alt"></i>
                                         <p>
                                             Calendar
                                             <span class="badge badge-info right">2</span>
@@ -486,14 +375,6 @@ export default function Validation() {
                                         <i class="nav-icon far fa-image"></i>
                                         <p>
                                             Gallery
-                                        </p>
-                                    </Link>
-                                </li>
-                                <li class="nav-item">
-                                    <Link to={'/ui/kanban'} class="nav-link">
-                                        <i class="nav-icon fas fa-columns"></i>
-                                        <p>
-                                            Kanban Board
                                         </p>
                                     </Link>
                                 </li>
@@ -719,7 +600,7 @@ export default function Validation() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../../starter.html" class="nav-link">
+                                            <a href="starter.html" class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Starter Page</p>
                                             </a>
@@ -750,12 +631,6 @@ export default function Validation() {
                                     </ul>
                                 </li>
                                 <li class="nav-header">MISCELLANEOUS</li>
-                                <li class="nav-item">
-                                    <Link to={'/iframe'} class="nav-link">
-                                        <i class="nav-icon fas fa-ellipsis-h"></i>
-                                        <p>Tabbed IFrame Plugin</p>
-                                    </Link>
-                                </li>
                                 <li class="nav-item">
                                     <a href="https://adminlte.io/docs/3.1/" class="nav-link">
                                         <i class="nav-icon fas fa-file"></i>
@@ -854,80 +729,38 @@ export default function Validation() {
                 </aside>
 
                 {/* <!-- Content Wrapper. Contains page content --> */}
-                <div class="content-wrapper">
-                    {/* <!-- Content Header (Page header) --> */}
-                    <section class="content-header">
-                        <div class="container-fluid">
-                            <div class="row mb-2">
-                                <div class="col-sm-6">
-                                    <h1>Validation</h1>
-                                </div>
-                                <div class="col-sm-6">
-                                    <ol class="breadcrumb float-sm-right">
-                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item active">Validation</li>
-                                    </ol>
-                                </div>
+                <div class="content-wrapper iframe-mode" data-widget="iframe" data-loading-screen="750">
+                    <div class="nav navbar navbar-expand navbar-white navbar-light border-bottom p-0">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link bg-danger dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Close</a>
+                            <div class="dropdown-menu mt-0">
+                                <a class="dropdown-item" href="#" data-widget="iframe-close" data-type="all">Close All</a>
+                                <a class="dropdown-item" href="#" data-widget="iframe-close" data-type="all-other">Close All Other</a>
                             </div>
                         </div>
-                    </section>
-
-                    {/* <!-- Main content --> */}
-                    <section class="content">
-                        <div class="container-fluid">
-                            <div class="row">
-                                {/* <!-- left column --> */}
-                                <div class="col-md-12">
-                                    {/* <!-- jquery validation --> */}
-                                    <div class="card card-primary">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Quick Example <small>jQuery Validation</small></h3>
-                                        </div>
-                                        {/* <!-- /.card-header --> */}
-                                        {/* <!-- form start --> */}
-                                        <form id="quickForm">
-                                            <div class="card-body">
-                                                <div class="form-group">
-                                                    <label for="exampleInputEmail1">Email address</label>
-                                                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="exampleInputPassword1">Password</label>
-                                                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
-                                                </div>
-                                                <div class="form-group mb-0">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" name="terms" class="custom-control-input" id="exampleCheck1" />
-                                                        <label class="custom-control-label" for="exampleCheck1">I agree to the <a href="#">terms of service</a>.</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* <!-- /.card-body --> */}
-                                            <div class="card-footer">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    {/* <!-- /.card --> */}
-                                </div>
-                                {/* <!--/.col (left) --> */}
-                                {/* <!-- right column --> */}
-                                <div class="col-md-6">
-
-                                </div>
-                                {/* <!--/.col (right) --> */}
-                            </div>
-                            {/* <!-- /.row --> */}
+                        <a class="nav-link bg-light" href="#" data-widget="iframe-scrollleft"><i class="fas fa-angle-double-left"></i></a>
+                        <ul class="navbar-nav overflow-hidden" role="tablist"></ul>
+                        <a class="nav-link bg-light" href="#" data-widget="iframe-scrollright"><i class="fas fa-angle-double-right"></i></a>
+                        <a class="nav-link bg-light" href="#" data-widget="iframe-fullscreen"><i class="fas fa-expand"></i></a>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-empty">
+                            <h2 class="display-4">No tab selected!</h2>
                         </div>
-                    </section>
-                    {/* <!-- /.content --> */}
+                        <div class="tab-loading">
+                            <div>
+                                <h2 class="display-4">Tab is loading <i class="fa fa-sync fa-spin"></i></h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 {/* <!-- /.content-wrapper --> */}
                 <footer class="main-footer">
-                    <div class="float-right d-none d-sm-block">
+                    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+                    All rights reserved.
+                    <div class="float-right d-none d-sm-inline-block">
                         <b>Version</b> 3.2.0
                     </div>
-                    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
                 </footer>
 
                 {/* <!-- Control Sidebar --> */}
@@ -937,8 +770,6 @@ export default function Validation() {
                 {/* <!-- /.control-sidebar --> */}
             </div>
             {/* <!-- ./wrapper --> */}
-
-
         </body>
     )
 }

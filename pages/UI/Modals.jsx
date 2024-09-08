@@ -526,7 +526,7 @@ export default function Modals() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                        <Link to={'/forms/general'} class="nav-link">
+                                            <Link to={'/forms/general'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>General Elements</p>
                                             </Link>
@@ -544,7 +544,7 @@ export default function Modals() {
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                        <Link to={'/forms/validations'} class="nav-link">
+                                            <Link to={'/forms/validations'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Validation</p>
                                             </Link>
@@ -560,7 +560,7 @@ export default function Modals() {
                                         </p>
                                     </a>
                                     <ul class="nav nav-treeview">
-                                    <li class="nav-item">
+                                        <li class="nav-item">
                                             <Link to={'/table/simple'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Simple Tables</p>
@@ -615,7 +615,7 @@ export default function Modals() {
                                         </p>
                                     </a>
                                     <ul class="nav nav-treeview">
-                                    <li class="nav-item">
+                                        <li class="nav-item">
                                             <Link to={'/mailbox/mailbox'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Inbox</p>
@@ -860,10 +860,10 @@ export default function Modals() {
                                 </li>
                                 <li class="nav-header">MISCELLANEOUS</li>
                                 <li class="nav-item">
-                                    <a href="../../iframe.html" class="nav-link">
+                                    <Link to={'/iframe'} class="nav-link">
                                         <i class="nav-icon fas fa-ellipsis-h"></i>
                                         <p>Tabbed IFrame Plugin</p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
                                     <a href="https://adminlte.io/docs/3.1/" class="nav-link">

@@ -461,7 +461,7 @@ export default function Fixed_top_nav() {
                                         </p>
                                     </a>
                                     <ul class="nav nav-treeview">
-                                    <li class="nav-item">
+                                        <li class="nav-item">
                                             <Link to={'/mailbox/mailbox'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Inbox</p>
@@ -706,10 +706,10 @@ export default function Fixed_top_nav() {
                                 </li>
                                 <li class="nav-header">MISCELLANEOUS</li>
                                 <li class="nav-item">
-                                    <a href="../../iframe.html" class="nav-link">
+                                    <Link to={'/iframe'} class="nav-link">
                                         <i class="nav-icon fas fa-ellipsis-h"></i>
                                         <p>Tabbed IFrame Plugin</p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
                                     <a href="https://adminlte.io/docs/3.1/" class="nav-link">
