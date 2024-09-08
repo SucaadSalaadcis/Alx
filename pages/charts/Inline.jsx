@@ -1,85 +1,101 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+
+
 export default function Inline() {
+    useEffect(() => {
+        try {
+            $(function () {
+                console.log('jQuery version:', $.fn.jquery); // Should be defined
+                console.log('knob function:', $.fn.knob);    // Should NOT be undefined
+                if ($.fn.knob) {
+                    $('.knob').knob({
+                        /*change : function (value) {
+                         //console.log("change : " + value);
+                         },
+                         release : function (value) {
+                         console.log("release : " + value);
+                         },
+                         cancel : function () {
+                         console.log("cancel : " + this.value);
+                         },*/
+                        draw: function () {
 
-    $(function () {
-        /* jQueryKnob */
+                            // "tron" case
+                            if (this.$.data('skin') == 'tron') {
 
-        $('.knob').knob({
-            /*change : function (value) {
-             //console.log("change : " + value);
-             },
-             release : function (value) {
-             console.log("release : " + value);
-             },
-             cancel : function () {
-             console.log("cancel : " + this.value);
-             },*/
-            draw: function () {
+                                var a = this.angle(this.cv)  // Angle
+                                    ,
+                                    sa = this.startAngle          // Previous start angle
+                                    ,
+                                    sat = this.startAngle         // Start angle
+                                    ,
+                                    ea                            // Previous end angle
+                                    ,
+                                    eat = sat + a                 // End angle
+                                    ,
+                                    r = true
 
-                // "tron" case
-                if (this.$.data('skin') == 'tron') {
+                                this.g.lineWidth = this.lineWidth
 
-                    var a = this.angle(this.cv)  // Angle
-                        ,
-                        sa = this.startAngle          // Previous start angle
-                        ,
-                        sat = this.startAngle         // Start angle
-                        ,
-                        ea                            // Previous end angle
-                        ,
-                        eat = sat + a                 // End angle
-                        ,
-                        r = true
+                                this.o.cursor
+                                    && (sat = eat - 0.3)
+                                    && (eat = eat + 0.3)
 
-                    this.g.lineWidth = this.lineWidth
+                                if (this.o.displayPrevious) {
+                                    ea = this.startAngle + this.angle(this.value)
+                                    this.o.cursor
+                                        && (sa = ea - 0.3)
+                                        && (ea = ea + 0.3)
+                                    this.g.beginPath()
+                                    this.g.strokeStyle = this.previousColor
+                                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false)
+                                    this.g.stroke()
+                                }
 
-                    this.o.cursor
-                        && (sat = eat - 0.3)
-                        && (eat = eat + 0.3)
+                                this.g.beginPath()
+                                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor
+                                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false)
+                                this.g.stroke()
 
-                    if (this.o.displayPrevious) {
-                        ea = this.startAngle + this.angle(this.value)
-                        this.o.cursor
-                            && (sa = ea - 0.3)
-                            && (ea = ea + 0.3)
-                        this.g.beginPath()
-                        this.g.strokeStyle = this.previousColor
-                        this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false)
-                        this.g.stroke()
-                    }
+                                this.g.lineWidth = 2
+                                this.g.beginPath()
+                                this.g.strokeStyle = this.o.fgColor
+                                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false)
+                                this.g.stroke()
 
-                    this.g.beginPath()
-                    this.g.strokeStyle = r ? this.o.fgColor : this.fgColor
-                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false)
-                    this.g.stroke()
+                                return false
+                            }
+                        }
+                    })
+                    /* END JQUERY KNOB */
 
-                    this.g.lineWidth = 2
-                    this.g.beginPath()
-                    this.g.strokeStyle = this.o.fgColor
-                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false)
-                    this.g.stroke()
+                    //INITIALIZE SPARKLINE CHARTS
+                    var sparkline1 = new Sparkline($('#sparkline-1')[0], { width: 240, height: 70, lineColor: '#92c1dc', endColor: '#92c1dc' })
+                    var sparkline2 = new Sparkline($('#sparkline-2')[0], { width: 240, height: 70, lineColor: '#f56954', endColor: '#f56954' })
+                    var sparkline3 = new Sparkline($('#sparkline-3')[0], { width: 240, height: 70, lineColor: '#3af221', endColor: '#3af221' })
 
-                    return false
+                    sparkline1.draw([1000, 1200, 920, 927, 931, 1027, 819, 930, 1021])
+                    sparkline2.draw([515, 519, 520, 522, 652, 810, 370, 627, 319, 630, 921])
+                    sparkline3.draw([15, 19, 20, 22, 33, 27, 31, 27, 19, 30, 21])
+
+                } else {
+                    console.error('jQuery knob plugin not loaded properly.');
                 }
-            }
-        })
-        /* END JQUERY KNOB */
+            });
+        } catch (error) {
+            console.error('An error occurred:', error);
+        }
+    }, []);
 
-        //INITIALIZE SPARKLINE CHARTS
-        var sparkline1 = new Sparkline($('#sparkline-1')[0], { width: 240, height: 70, lineColor: '#92c1dc', endColor: '#92c1dc' })
-        var sparkline2 = new Sparkline($('#sparkline-2')[0], { width: 240, height: 70, lineColor: '#f56954', endColor: '#f56954' })
-        var sparkline3 = new Sparkline($('#sparkline-3')[0], { width: 240, height: 70, lineColor: '#3af221', endColor: '#3af221' })
-
-        sparkline1.draw([1000, 1200, 920, 927, 931, 1027, 819, 930, 1021])
-        sparkline2.draw([515, 519, 520, 522, 652, 810, 370, 627, 319, 630, 921])
-        sparkline3.draw([15, 19, 20, 22, 33, 27, 31, 27, 19, 30, 21])
-
-    })
 
 
     return (
+        //     <div>
+        //     {/* Example Usage */}
+        //     <input type="text" className="knob" data-skin="tron" />
+        //   </div>
         <body class="hold-transition sidebar-mini">
             <div class="wrapper">
                 {/* <!-- Navbar --> */}
@@ -256,7 +272,7 @@ export default function Inline() {
                         <nav class="mt-2">
                             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                                 {/* <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library --> */}
+       with font-awesome or any other icon font library --> */}
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -1164,9 +1180,9 @@ export default function Inline() {
                 </aside>
                 {/* <!-- /.control-sidebar --> */}
             </div>
-            {/* <!-- ./wrapper --> */}
-
 
         </body>
+
     )
 }
+
