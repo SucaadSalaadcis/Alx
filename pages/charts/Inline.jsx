@@ -376,10 +376,10 @@ export default function Inline() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="flot.html" class="nav-link">
+                                            <Link to={'/charts/flot'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Flot</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <Link to={'/charts/inline'} class="nav-link active">

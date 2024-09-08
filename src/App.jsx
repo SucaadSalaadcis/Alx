@@ -13,7 +13,7 @@ import Collapsed_sidebar from '../pages/layout/Collapsed_sidebar'
 import Boxed from '../pages/layout/Boxed'
 // charts
 import Chartjs from '../pages/charts/Chartjs'
-// import Flot from '../pages/charts/Flot'
+import Flot from '../pages/charts/Flot'
 import Inline from '../pages/charts/Inline'
 import Uplot from '../pages/charts/uplot'
 // UI
@@ -101,7 +101,7 @@ export default function App() {
 
         {/* charts */}
         <Route path='/chartjs' element={<Chartjs />} />
-        {/* <Route path='/charts/flot' element={<Flot/>} /> */}
+        <Route path='/charts/flot' element={<Flot/>} />
         <Route path='/charts/inline' element={<Inline />} />
         <Route path='/charts/uplot' element={<Uplot />} />
 
