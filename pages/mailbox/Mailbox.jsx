@@ -180,7 +180,7 @@ export default function Mailbox() {
                     {/* <!-- Brand Logo --> */}
                     <Link to={'/'} class="brand-link">
                         <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style={{ opacity: ".8" }} />
-                        <span class="brand-text font-weight-light">AdminLTE 3</span>
+                        <span class="brand-text font-weight-light">ADWAAR</span>
                     </Link>
 
                     {/* <!-- Sidebar --> */}
@@ -409,16 +409,16 @@ export default function Mailbox() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/advanced.html" class="nav-link">
+                                            <Link to={'/forms/advanced'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Advanced Elements</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/editors.html" class="nav-link">
+                                            <Link to={'/forms/editors'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Editors</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <Link to={'/forms/validations'} class="nav-link">
@@ -1008,7 +1008,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"></td>
                                                         <td class="mailbox-date">5 mins ago</td>
@@ -1022,7 +1022,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
                                                         <td class="mailbox-date">28 mins ago</td>
@@ -1036,7 +1036,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
                                                         <td class="mailbox-date">11 hours ago</td>
@@ -1050,7 +1050,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"></td>
                                                         <td class="mailbox-date">15 hours ago</td>
@@ -1064,7 +1064,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
                                                         <td class="mailbox-date">Yesterday</td>
@@ -1078,7 +1078,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
                                                         <td class="mailbox-date">2 days ago</td>
@@ -1092,7 +1092,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
                                                         <td class="mailbox-date">2 days ago</td>
@@ -1106,7 +1106,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"></td>
                                                         <td class="mailbox-date">2 days ago</td>
@@ -1120,7 +1120,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"></td>
                                                         <td class="mailbox-date">2 days ago</td>
@@ -1134,7 +1134,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"></td>
                                                         <td class="mailbox-date">2 days ago</td>
@@ -1148,7 +1148,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
                                                         <td class="mailbox-date">4 days ago</td>
@@ -1162,7 +1162,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"></td>
                                                         <td class="mailbox-date">12 days ago</td>
@@ -1176,7 +1176,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
                                                         <td class="mailbox-date">12 days ago</td>
@@ -1190,7 +1190,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
                                                         <td class="mailbox-date">14 days ago</td>
@@ -1204,7 +1204,7 @@ export default function Mailbox() {
                                                         </td>
                                                         <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
                                                         <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                        <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                        <td class="mailbox-subject"><b>ADWAAR.0 Issue</b> - Trying to find a solution to this problem...
                                                         </td>
                                                         <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
                                                         <td class="mailbox-date">15 days ago</td>

@@ -148,7 +148,7 @@ export default function Icon() {
                     {/* <!-- Brand Logo --> */}
                     <Link to={'/'} class="brand-link">
                         <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style={{ opacity: ".8" }} />
-                        <span class="brand-text font-weight-light">AdminLTE 3</span>
+                        <span class="brand-text font-weight-light">ADWAAR</span>
                     </Link>
 
                     {/* <!-- Sidebar --> */}
@@ -377,16 +377,16 @@ export default function Icon() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/advanced.html" class="nav-link">
+                                            <Link to={'/forms/advanced'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Advanced Elements</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/editors.html" class="nav-link">
+                                            <Link to={'/forms/editors'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Editors</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <Link to={'/forms/validations'} class="nav-link">
@@ -835,7 +835,7 @@ export default function Icon() {
                                     <h3 class="card-title">Icons</h3>
                                 </div>
                                 <div class="card-body">
-                                    <p>You can use any font library you like with AdminLTE 3.</p>
+                                    <p>You can use any font library you like with ADWAAR.</p>
                                     <strong>Recommendations</strong>
                                     <div>
                                         <a href="https://fontawesome.com/">Font Awesome</a><br />

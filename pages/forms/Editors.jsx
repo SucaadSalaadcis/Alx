@@ -1,28 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Editors() {
+const Editors = () => {
+    useEffect(() => {
+        $(function () {
+            // Initialize Summernote if the element exists
+            const summernoteElement = $('#summernote');
+            if (summernoteElement.length > 0) {
+                summernoteElement.summernote();
+            } else {
+                console.warn("Element '#summernote' not found!");
+            }
 
-
-    $(document).ready(function () {
-        $('#summernote').summernote();
-        CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
-            mode: "htmlmixed",
-            theme: "monokai"
+            // Initialize CodeMirror if the element exists
+            const codeMirrorElement = document.getElementById("codeMirrorDemo");
+            if (codeMirrorElement) {
+                CodeMirror.fromTextArea(codeMirrorElement, {
+                    mode: "htmlmixed",
+                    theme: "monokai",
+                });
+            } else {
+                console.warn("Element '#codeMirrorDemo' not found!");
+            }
         });
-    });
-
-
-    // $(function () {
-    //     // Summernote
-    //     $('#summernote').summernote()
-
-    //     // CodeMirror
-    //     CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
-    //         mode: "htmlmixed",
-    //         theme: "monokai"
-    //     });
-    // })
-
+    }, []); // Empty dependency array to run on component mount
 
     return (
         <body class="hold-transition sidebar-mini">
@@ -35,7 +36,7 @@ export default function Editors() {
                             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                         </li>
                         <li class="nav-item d-none d-sm-inline-block">
-                            <a href="../../index3.html" class="nav-link">Home</a>
+                            <Link to={'/'} class="nav-link">Home</Link>
                         </li>
                         <li class="nav-item d-none d-sm-inline-block">
                             <a href="#" class="nav-link">Contact</a>
@@ -168,10 +169,10 @@ export default function Editors() {
                 {/* <!-- Main Sidebar Container --> */}
                 <aside class="main-sidebar sidebar-dark-primary elevation-4">
                     {/* <!-- Brand Logo --> */}
-                    <a href="../../index3.html" class="brand-link">
+                    <Link to={'/'} class="brand-link">
                         <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style={{ opacity: ".8" }} />
-                        <span class="brand-text font-weight-light">AdminLTE 3</span>
-                    </a>
+                        <span class="brand-text font-weight-light">ADWAAR</span>
+                    </Link>
 
                     {/* <!-- Sidebar --> */}
                     <div class="sidebar">
@@ -200,8 +201,7 @@ export default function Editors() {
                         {/* <!-- Sidebar Menu --> */}
                         <nav class="mt-2">
                             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                                {/* <!-- Add icons to the links using the .nav-icon class
-                   with font-awesome or any other icon font library --> */}
+
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -211,12 +211,11 @@ export default function Editors() {
                                         </p>
                                     </a>
                                     <ul class="nav nav-treeview">
-                                        {/* <!--  --> */}
                                         <li class="nav-item">
-                                            <a href="../../index3.html" class="nav-link">
+                                            <Link to={'/'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Dashboard v3</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -240,52 +239,52 @@ export default function Editors() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../layout/top-nav.html" class="nav-link">
+                                            <Link to={'/layout/top_nav'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Top Navigation</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../layout/top-nav-sidebar.html" class="nav-link">
+                                            <Link to={'/layout/top_nav_sidebar'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Top Navigation + Sidebar</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../layout/boxed.html" class="nav-link">
+                                            <Link to={'/layout/boxed'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Boxed</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../layout/fixed-sidebar.html" class="nav-link">
+                                            <Link to={'/layout/fixed_sidebar'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Fixed Sidebar</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../layout/fixed-sidebar-custom.html" class="nav-link">
+                                            <Link to={'/layout/fixed_sidebar_custom'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Fixed Sidebar <small>+ Custom Area</small></p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../layout/fixed-topnav.html" class="nav-link">
+                                            <Link to={'/layout/fixed_top_nav'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Fixed Navbar</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../layout/fixed-footer.html" class="nav-link">
+                                            <Link to={'/layout/fixed_footer'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Fixed Footer</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../layout/collapsed-sidebar.html" class="nav-link">
+                                            <Link to={'/layout/collapsed_sidebar'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Collapsed Sidebar</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -299,22 +298,22 @@ export default function Editors() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../charts/chartjs.html" class="nav-link">
+                                            <Link to={'/chartjs'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>ChartJS</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../charts/flot.html" class="nav-link">
+                                            <Link to={'/charts/flot'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Flot</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../charts/inline.html" class="nav-link">
+                                            <Link to={'/charts/inline'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Inline</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <Link to={'/charts/uplot'} class="nav-link">
@@ -334,52 +333,52 @@ export default function Editors() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../UI/general.html" class="nav-link">
+                                            <Link to={'/ui/general'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>General</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/icons.html" class="nav-link">
+                                            <Link to={'/ui/icon'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Icons</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/buttons.html" class="nav-link">
+                                            <Link to={'/ui/buttons'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Buttons</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/sliders.html" class="nav-link">
+                                            <Link to={'/ui/sliders'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Sliders</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/modals.html" class="nav-link">
+                                            <Link to={'/ui/modals'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Modals & Alerts</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/navbar.html" class="nav-link">
+                                            <Link to={'/ui/navbar'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Navbar & Tabs</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/timeline.html" class="nav-link">
+                                            <Link to={'/ui/timeline'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Timeline</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/ribbons.html" class="nav-link">
+                                            <Link to={'/ui/ribbons'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Ribbons</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -393,28 +392,28 @@ export default function Editors() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../forms/general.html" class="nav-link">
+                                            <Link to={'/forms/general'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>General Elements</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/advanced.html" class="nav-link">
+                                            <Link to={'/forms/advanced'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Advanced Elements</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/editors.html" class="nav-link active">
+                                            <Link to={'/forms/editors'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Editors</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/validation.html" class="nav-link">
+                                            <Link to={'/forms/validations'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Validation</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -428,50 +427,50 @@ export default function Editors() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../tables/simple.html" class="nav-link">
+                                            <Link to={'/table/simple'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Simple Tables</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../tables/data.html" class="nav-link">
+                                            <Link to={'/table/data'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>DataTables</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../tables/jsgrid.html" class="nav-link">
+                                            <Link to={'/table/jsgrid'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>jsGrid</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-header">EXAMPLES</li>
                                 <li class="nav-item">
-                                    <a href="../calendar.html" class="nav-link">
-                                        <i class="nav-icon far fa-calendar-alt"></i>
+                                    <Link to={'/ui/calender'} class="nav-link">
+                                        <i class="nav-icon fas fa-calendar-alt"></i>
                                         <p>
                                             Calendar
                                             <span class="badge badge-info right">2</span>
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../gallery.html" class="nav-link">
+                                    <Link to={'/ui/galery'} class="nav-link">
                                         <i class="nav-icon far fa-image"></i>
                                         <p>
                                             Gallery
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../kanban.html" class="nav-link">
+                                    <Link to={'/ui/kanban'} class="nav-link">
                                         <i class="nav-icon fas fa-columns"></i>
                                         <p>
                                             Kanban Board
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
@@ -483,22 +482,22 @@ export default function Editors() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../mailbox/mailbox.html" class="nav-link">
+                                            <Link to={'/mailbox/mailbox'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Inbox</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../mailbox/compose.html" class="nav-link">
+                                            <Link to={'/mailbox/compose'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Compose</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../mailbox/read-mail.html" class="nav-link">
+                                            <Link to={'/mailbox/read_mail'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Read</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -512,64 +511,64 @@ export default function Editors() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../examples/invoice.html" class="nav-link">
+                                            <Link to={'/example/invoice'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Invoice</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/profile.html" class="nav-link">
+                                            <Link to={'/example/profile'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Profile</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/e-commerce.html" class="nav-link">
+                                            <Link to={'/example/ecommerce'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>E-commerce</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/projects.html" class="nav-link">
+                                            <Link to={'/example/projects'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Projects</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/project-add.html" class="nav-link">
+                                            <Link to={'/example/project_add'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Project Add</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/project-edit.html" class="nav-link">
+                                            <Link to={'/example/project_edit'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Project Edit</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/project-detail.html" class="nav-link">
+                                            <Link to={'/example/project_detail'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Project Detail</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/contacts.html" class="nav-link">
+                                            <Link to={'/example/contacts'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Contacts</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/faq.html" class="nav-link">
+                                            <Link to={'/example/faq'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>FAQ</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/contact-us.html" class="nav-link">
+                                            <Link to={'/example/contact_us'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Contact us</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -592,28 +591,28 @@ export default function Editors() {
                                             </a>
                                             <ul class="nav nav-treeview">
                                                 <li class="nav-item">
-                                                    <a href="../examples/login.html" class="nav-link">
+                                                    <Link to={'/example/login'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Login v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/register.html" class="nav-link">
+                                                    <Link to={'/example/register'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Register v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/forgot-password.html" class="nav-link">
+                                                    <Link to={'/example/forgot_password'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Forgot Password v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/recover-password.html" class="nav-link">
+                                                    <Link to={'/example/recover_password'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Recover Password v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
@@ -627,72 +626,72 @@ export default function Editors() {
                                             </a>
                                             <ul class="nav nav-treeview">
                                                 <li class="nav-item">
-                                                    <a href="../examples/login-v2.html" class="nav-link">
+                                                    <Link to={'/example/login_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Login v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/register-v2.html" class="nav-link">
+                                                    <Link to={'/example/register_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Register v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/forgot-password-v2.html" class="nav-link">
+                                                    <Link to={'/example/forgot_password_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Forgot Password v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/recover-password-v2.html" class="nav-link">
+                                                    <Link to={'/example/recover_password_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Recover Password v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/lockscreen.html" class="nav-link">
+                                            <Link to={'/example/lockscreen'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Lockscreen</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/legacy-user-menu.html" class="nav-link">
+                                            <Link to={'/example/legacy_user_menu'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Legacy User Menu</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/language-menu.html" class="nav-link">
+                                            <Link to={'/example/language_menu'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Language Menu</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/404.html" class="nav-link">
+                                            <Link to={'/example/404'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Error 404</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/500.html" class="nav-link">
+                                            <Link to={'/example/500'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Error 500</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/pace.html" class="nav-link">
+                                            <Link to={'/example/pace'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Pace</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/blank.html" class="nav-link">
+                                            <Link to={'/example/blank'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Blank Page</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <a href="../../starter.html" class="nav-link">
@@ -712,25 +711,25 @@ export default function Editors() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../search/simple.html" class="nav-link">
+                                            <Link to={'/search/simple_search'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Simple Search</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../search/enhanced.html" class="nav-link">
+                                            <Link to={'/search/enhanced'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Enhanced</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-header">MISCELLANEOUS</li>
                                 <li class="nav-item">
-                                    <a href="../../iframe.html" class="nav-link">
+                                    <Link to={'/iframe'} class="nav-link">
                                         <i class="nav-icon fas fa-ellipsis-h"></i>
                                         <p>Tabbed IFrame Plugin</p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
                                     <a href="https://adminlte.io/docs/3.1/" class="nav-link">
@@ -860,9 +859,9 @@ export default function Editors() {
                                     </div>
                                     {/* <!-- /.card-header --> */}
                                     <div class="card-body">
-                                        <div contenteditable="true" id="summernote">
+                                        <textarea id="summernote" value={''} readOnly>
                                             Place <em>some</em> <u>text</u> <strong>here</strong>
-                                        </div>
+                                        </textarea>
                                     </div>
                                     <div class="card-footer">
                                         Visit <a href="https://github.com/summernote/summernote/">Summernote</a> documentation for more examples and information about the plugin.
@@ -882,7 +881,20 @@ export default function Editors() {
                                     </div>
                                     {/* <!-- /.card-header --> */}
                                     <div class="card-body p-0">
-                                        <textarea id="codeMirrorDemo" class="p-3">
+                                        <textarea id="codeMirrorDemo" class="p-3" value='<div class="info-box bg-gradient-info">
+  <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
+  <div class="info-box-content">
+    <span class="info-box-text">Bookmarks</span>
+    <span class="info-box-number">41,410</span>
+    <div class="progress">
+      <div class="progress-bar" style="width: 70%"></div>
+    </div>
+    <span class="progress-description">
+      70% Increase in 30 Days
+    </span>
+  </div>
+</div>
+              ' readOnly>
                                             <div class="info-box bg-gradient-info">
                                                 <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
                                                 <div class="info-box-content">
@@ -925,8 +937,8 @@ export default function Editors() {
             </div>
             {/* <!-- ./wrapper --> */}
 
-
-
         </body>
-    )
-}
+    );
+};
+
+export default Editors;

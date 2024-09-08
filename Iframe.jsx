@@ -318,10 +318,10 @@ export default function Iframe() {
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="pages/forms/editors.html" class="nav-link">
+                                            <Link to={'/forms/editors'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Editors</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <Link to={'/forms/validations'} class="nav-link">

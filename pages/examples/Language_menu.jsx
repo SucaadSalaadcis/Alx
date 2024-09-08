@@ -169,7 +169,7 @@ export default function Language_menu() {
                     {/* <!-- Brand Logo --> */}
                     <Link to={'/'} class="brand-link">
                         <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style={{ opacity: ".8" }} />
-                        <span class="brand-text font-weight-light">AdminLTE 3</span>
+                        <span class="brand-text font-weight-light">ADWAAR</span>
                     </Link>
 
                     {/* <!-- Sidebar --> */}
@@ -388,16 +388,16 @@ export default function Language_menu() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/advanced.html" class="nav-link">
+                                            <Link to={'/forms/advanced'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Advanced Elements</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../forms/editors.html" class="nav-link">
+                                            <Link to={'/forms/editors'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Editors</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <Link to={'/forms/validations'} class="nav-link">

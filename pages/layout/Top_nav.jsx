@@ -11,7 +11,7 @@ export default function Top_nav() {
                     <div class="container">
                         <Link to={'/'} class="navbar-brand">
                             <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style={{opacity: ".8"}} />
-                            <span class="brand-text font-weight-light">AdminLTE 3</span>
+                            <span class="brand-text font-weight-light">ADWAAR</span>
                         </Link>
 
                         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
