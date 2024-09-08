@@ -342,22 +342,22 @@ export default function Read_mail() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/navbar.html" class="nav-link">
+                                            <Link to={'/ui/navbar'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Navbar & Tabs</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/timeline.html" class="nav-link">
+                                            <Link to={'/ui/timeline'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Timeline</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/ribbons.html" class="nav-link">
+                                            <Link to={'/ui/ribbons'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Ribbons</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>

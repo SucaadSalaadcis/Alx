@@ -382,10 +382,10 @@ export default function Validation() {
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../UI/modals.html" class="nav-link">
+                                            <Link to={'/ui/modals'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Modals & Alerts</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
                                             <Link to={'/ui/navbar'} class="nav-link">
