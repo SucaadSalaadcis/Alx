@@ -279,16 +279,16 @@ export default function Timeline() {
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../charts/inline.html" class="nav-link">
+                                            <Link to={'/charts/inline'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Inline</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../charts/uplot.html" class="nav-link">
+                                            <Link to={'/charts/uplot'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>uPlot</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -480,64 +480,64 @@ export default function Timeline() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="../examples/invoice.html" class="nav-link">
+                                            <Link to={'/example/invoice'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Invoice</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/profile.html" class="nav-link">
+                                            <Link to={'/example/profile'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Profile</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/e-commerce.html" class="nav-link">
+                                            <Link to={'/example/ecommerce'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>E-commerce</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/projects.html" class="nav-link">
+                                            <Link to={'/example/projects'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Projects</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/project-add.html" class="nav-link">
+                                            <Link to={'/example/project_add'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Project Add</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/project-edit.html" class="nav-link">
+                                            <Link to={'/example/project_edit'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Project Edit</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/project-detail.html" class="nav-link">
+                                            <Link to={'/example/project_detail'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Project Detail</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/contacts.html" class="nav-link">
+                                            <Link to={'/example/contacts'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Contacts</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/faq.html" class="nav-link">
+                                            <Link to={'/example/faq'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>FAQ</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="../examples/contact-us.html" class="nav-link">
+                                            <Link to={'/example/contact_us'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Contact us</p>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -560,28 +560,28 @@ export default function Timeline() {
                                             </a>
                                             <ul class="nav nav-treeview">
                                                 <li class="nav-item">
-                                                    <a href="../examples/login.html" class="nav-link">
+                                                    <Link to={'/example/login'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Login v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/register.html" class="nav-link">
+                                                    <Link to={'/example/register'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Register v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/forgot-password.html" class="nav-link">
+                                                    <Link to={'/example/forgot_password'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Forgot Password v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/recover-password.html" class="nav-link">
+                                                    <Link to={'/example/recover_password'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Recover Password v1</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
@@ -595,28 +595,28 @@ export default function Timeline() {
                                             </a>
                                             <ul class="nav nav-treeview">
                                                 <li class="nav-item">
-                                                    <a href="../examples/login-v2.html" class="nav-link">
+                                                    <Link to={'/example/login_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Login v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/register-v2.html" class="nav-link">
+                                                    <Link to={'/example/register_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Register v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/forgot-password-v2.html" class="nav-link">
+                                                    <Link to={'/example/forgot_password_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Forgot Password v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="../examples/recover-password-v2.html" class="nav-link">
+                                                    <Link to={'/example/recover_password_v2'} class="nav-link">
                                                         <i class="far fa-circle nav-icon"></i>
                                                         <p>Recover Password v2</p>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
