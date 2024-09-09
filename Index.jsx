@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Index() {
+    const [time, setTime] = useState(Date.now())
+
+    const refreshPage = () => {
+        useEffect(() => {
+            const interval = setInterval(() => setTime(Date.now()), 1000);
+            return () => {
+              clearInterval(interval);
+            };
+          }, []);
+    }
+
     return (
         <body class="hold-transition sidebar-mini">
             <div class="wrapper">
@@ -13,7 +24,7 @@ export default function Index() {
                             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                         </li>
                         <li class="nav-item d-none d-sm-inline-block">
-                            <Link to={'/'} class="nav-link">Home</Link>
+                            <Link to={'/'} onClick={refreshPage} class="nav-link">Home</Link>
                         </li>
                         <li class="nav-item d-none d-sm-inline-block">
                             <a href="#" class="nav-link">Contact</a>
