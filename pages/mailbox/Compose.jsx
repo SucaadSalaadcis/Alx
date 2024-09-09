@@ -382,12 +382,12 @@ export default function Compose() {
                                                 <p>General Elements</p>
                                             </Link>
                                         </li>
-                                        <li class="nav-item">
+                                        {/* <li class="nav-item">
                                             <Link to={'/forms/advanced'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Advanced Elements</p>
                                             </Link>
-                                        </li>
+                                        </li> */}
                                         <li class="nav-item">
                                             <Link to={'/forms/editors'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
