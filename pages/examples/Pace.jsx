@@ -662,7 +662,7 @@ export default function Pace() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/example/pace'} class="nav-link">
+                                            <Link to={'/example/pace'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Pace</p>
                                             </Link>

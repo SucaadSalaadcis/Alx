@@ -444,7 +444,7 @@ export default function Kanban() {
                                     </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link to={'/ui/kanban'} class="nav-link">
+                                    <Link to={'/ui/kanban'} class="nav-link active">
                                         <i class="nav-icon fas fa-columns"></i>
                                         <p>
                                             Kanban Board

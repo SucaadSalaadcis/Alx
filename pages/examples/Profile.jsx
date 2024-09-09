@@ -496,7 +496,7 @@ export default function Profile() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/example/profile'} class="nav-link">
+                                            <Link to={'/example/profile'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Profile</p>
                                             </Link>

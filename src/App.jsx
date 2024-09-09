@@ -30,7 +30,7 @@ import Gallery from '../pages/Gallery'
 import Kanban from '../pages/Kanban'
 // form
 import GeneralF from '../pages/forms/GeneralF'
-import Advanced from '../pages/forms/Advanced'
+// import Advanced from '../pages/forms/Advanced'
 import Editors from '../pages/forms/Editors'
 import Validation from '../pages/forms/Validation'
 // tables
@@ -123,7 +123,7 @@ export default function App() {
 
         {/* forms */}
         <Route path='/forms/general' element={<GeneralF />} />
-        <Route path='/forms/advanced' element={<Advanced />} />
+        {/* <Route path='/forms/advanced' element={<Advanced />} /> */}
         <Route path='/forms/editors' element={<Editors />} />
         <Route path='/forms/validations' element={<Validation />} />
 

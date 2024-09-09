@@ -583,7 +583,7 @@ export default function Calendar() {
                                 </li>
                                 <li class="nav-header">EXAMPLES</li>
                                 <li class="nav-item">
-                                    <Link to={'/ui/calender'} class="nav-link">
+                                    <Link to={'/ui/calender'} class="nav-link active">
                                         <i class="nav-icon fas fa-calendar-alt"></i>
                                         <p>
                                             Calendar

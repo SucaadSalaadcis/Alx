@@ -654,7 +654,7 @@ export default function Language_menu() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/example/language_menu'} class="nav-link">
+                                            <Link to={'/example/language_menu'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Language Menu</p>
                                             </Link>

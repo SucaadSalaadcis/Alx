@@ -503,7 +503,7 @@ export default function Projects() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/example/projects'} class="nav-link">
+                                            <Link to={'/example/projects'}class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Projects</p>
                                             </Link>

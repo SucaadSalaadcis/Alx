@@ -435,7 +435,7 @@ export default function Validation() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/forms/validations'} class="nav-link">
+                                            <Link to={'/forms/validations'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Validation</p>
                                             </Link>

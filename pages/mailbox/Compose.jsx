@@ -473,7 +473,7 @@ export default function Compose() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/mailbox/compose'} class="nav-link">
+                                            <Link to={'/mailbox/compose'}class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Compose</p>
                                             </Link>

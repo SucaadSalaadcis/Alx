@@ -521,7 +521,7 @@ export default function Project_edit() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/example/project_edit'} class="nav-link">
+                                            <Link to={'/example/project_edit'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Project Edit</p>
                                             </Link>

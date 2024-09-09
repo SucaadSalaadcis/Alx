@@ -404,7 +404,7 @@ const Editors = () => {
                                             </Link>
                                         </li> */}
                                         <li class="nav-item">
-                                            <Link to={'/forms/editors'} class="nav-link">
+                                            <Link to={'/forms/editors'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Editors</p>
                                             </Link>

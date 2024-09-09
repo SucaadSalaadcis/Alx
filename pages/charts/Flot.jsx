@@ -571,7 +571,7 @@ export default function Flot() {
                       </Link>
                     </li>
                     <li class="nav-item">
-                      <Link to={'/charts/flot'} class="nav-link">
+                      <Link to={'/charts/flot'} class="nav-link active">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Flot</p>
                       </Link>

@@ -376,7 +376,7 @@ export default function GeneralF() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <Link to={'/forms/general'} class="nav-link">
+                                            <Link to={'/forms/general'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>General Elements</p>
                                             </Link>

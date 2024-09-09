@@ -493,7 +493,7 @@ export default function Mailbox() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <Link to={'/mailbox/mailbox'} class="nav-link">
+                                            <Link to={'/mailbox/mailbox'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Inbox</p>
                                             </Link>

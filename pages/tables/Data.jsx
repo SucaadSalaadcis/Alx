@@ -429,7 +429,7 @@ export default function Data() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/table/data'} class="nav-link">
+                                            <Link to={'/table/data'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>DataTables</p>
                                             </Link>

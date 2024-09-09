@@ -649,7 +649,7 @@ export default function Err_404() {
                       </Link>
                     </li>
                     <li class="nav-item">
-                      <Link to={'/example/404'} class="nav-link">
+                      <Link to={'/example/404'} class="nav-link active">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Error 404</p>
                       </Link>

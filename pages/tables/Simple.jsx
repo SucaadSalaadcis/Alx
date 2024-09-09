@@ -406,7 +406,7 @@ export default function Simple() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <Link to={'/table/simple'} class="nav-link">
+                                            <Link to={'/table/simple'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Simple Tables</p>
                                             </Link>

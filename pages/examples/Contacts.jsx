@@ -532,7 +532,7 @@ export default function Contacts() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/example/contacts'} class="nav-link">
+                                            <Link to={'/example/contacts'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Contacts</p>
                                             </Link>

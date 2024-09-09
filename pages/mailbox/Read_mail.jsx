@@ -473,7 +473,7 @@ export default function Read_mail() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/mailbox/read_mail'} class="nav-link">
+                                            <Link to={'/mailbox/read_mail'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Read</p>
                                             </Link>

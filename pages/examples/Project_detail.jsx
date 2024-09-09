@@ -527,7 +527,7 @@ export default function Project_detail() {
                       </Link>
                     </li>
                     <li class="nav-item">
-                      <Link to={'/example/project_detail'} class="nav-link">
+                      <Link to={'/example/project_detail'} class="nav-link active">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Project Detail</p>
                       </Link>

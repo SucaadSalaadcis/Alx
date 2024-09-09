@@ -490,7 +490,7 @@ export default function Invoice() {
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <Link to={'/example/invoice'} class="nav-link">
+                                            <Link to={'/example/invoice'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Invoice</p>
                                             </Link>

@@ -545,7 +545,7 @@ export default function Contact_us() {
                       </Link>
                     </li>
                     <li class="nav-item">
-                      <Link to={'/example/contact_us'} class="nav-link">
+                      <Link to={'/example/contact_us'} class="nav-link active">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Contact us</p>
                       </Link>

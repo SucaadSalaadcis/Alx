@@ -453,7 +453,7 @@ export default function Gallery() {
                                     </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link to={'/ui/galery'} class="nav-link">
+                                    <Link to={'/ui/galery'} class="nav-link active">
                                         <i class="nav-icon far fa-image"></i>
                                         <p>
                                             Gallery

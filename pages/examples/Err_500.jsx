@@ -655,7 +655,7 @@ export default function Err_500() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/example/500'} class="nav-link">
+                                            <Link to={'/example/500'} class="nav-link active">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Error 500</p>
                                             </Link>
